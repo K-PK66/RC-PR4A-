@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "src=http___img.mw8.com_170702_1498438237.jpg&refer=http___img.mw8.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

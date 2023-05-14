@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "src=http___p7.itc.cn_q_70_images03_20200913_357997c4f2314d56bf0e96116879170f.jpeg&refer=http___p7.itc.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

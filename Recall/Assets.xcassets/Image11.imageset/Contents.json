@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "src=http___img.99.com.cn_uploads_140303_344_091242_1.jpg&refer=http___img.99.com.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
