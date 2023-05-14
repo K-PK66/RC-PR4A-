@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MedicineAlarm" representedClassName=".MedicineAlarm" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" customClassName="UIImage"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="notes" attributeType="String"/>
+        <attribute name="pillType" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="alarm" toMany="YES" deletionRule="Nullify" destinationEntity="PillTime" inverseName="medicine" inverseEntity="PillTime"/>
+    </entity>
+    <entity name="MemoryAlbum" representedClassName=".MemoryAlbum" syncable="YES">
+        <attribute name="image" attributeType="Transformable" valueTransformerName="" customClassName="UIImage"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+    <entity name="MemoryScene" representedClassName=".MemoryScene" syncable="YES">
+        <attribute name="albumName" optional="YES" attributeType="String"/>
+        <attribute name="image" attributeType="Transformable" customClassName="UIImage"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="testSceneName" attributeType="String"/>
+    </entity>
+    <entity name="PillTime" representedClassName=".PillTime" syncable="YES">
+        <attribute name="complete" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="time" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="medicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MedicineAlarm" inverseName="alarm" inverseEntity="MedicineAlarm"/>
+    </entity>
+    <entity name="USDZSceneEntity" representedClassName=".USDZSceneEntity" syncable="YES">
+        <attribute name="model" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <elements>
+        <element name="MedicineAlarm" positionX="-733.488525390625" positionY="60.53691101074219" width="128" height="118"/>
+        <element name="MemoryAlbum" positionX="-418.5619506835938" positionY="58.21160888671875" width="128" height="73"/>
+        <element name="MemoryScene" positionX="-209.7820434570312" positionY="57.85751342773438" width="128" height="89"/>
+        <element name="PillTime" positionX="-732.7874755859375" positionY="240.9146118164062" width="128" height="88"/>
+        <element name="USDZSceneEntity" positionX="-316.4635009765625" positionY="326.8826293945312" width="128" height="58"/>
+    </elements>
+</model>
